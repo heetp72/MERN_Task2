@@ -8,12 +8,10 @@ This is a simple **Shopping Cart Application** built using **React.js**.
 
 ### 1. Install React
 If you don’t have a React app created yet, run:
-```bash
+
 npx create-react-app task1
-2. Navigate to the Project
-bash
-Copy
-Edit
+### 2. Navigate to the Project
+
 cd task1
 3. Add Project Files
 Place all the provided project files (components, App.js, App.css, etc.) into the src folder.
