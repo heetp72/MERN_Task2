@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import QuoteGenerator from "./components/QuoteGenerator";
+import NewPost from "./components/NewPost";
+import "./App.css";
 
 function App() {
+  const [post, setPost] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h1 className="app-title">✨ Random Quotes Generator ✨</h1>
+      <QuoteGenerator setPost={setPost} />
+      {post && <NewPost post={post} />}
     </div>
   );
 }
